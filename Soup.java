@@ -29,20 +29,24 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-
+        letters += word;
     }
 
 
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
-        return 'a';
+        int noodle = (int)(Math.random()* letters.length());
+
+        return letters.charAt(noodle);
     }
 
 
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
-        return "";
+        String ramen = letters.substring(0, letters.length()/2);
+        
+        return ramen;
     }
 
 
@@ -58,6 +62,7 @@ public class Soup {
 
     //should remove the word "word" from the string letters. If the word is not found in letters then it does nothing.
     public void removeWord(String word){
+
         
     }
 }
