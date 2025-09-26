@@ -45,6 +45,8 @@ public class Soup {
     //the letters
     public String companyCentered(){
         String ramen = letters.substring(0, letters.length()/2);
+        String ramen3 = letters.substring(letters.length()/2,letters.length());
+        System.out.println(ramen + company + ramen3);
         
         return ramen;
     }
