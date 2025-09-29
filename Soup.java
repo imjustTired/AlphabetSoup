@@ -46,7 +46,8 @@ public class Soup {
     public String companyCentered(){
         String ramen = letters.substring(0, letters.length()/2);
         String ramen3 = letters.substring(letters.length()/2,letters.length());
-        System.out.println(ramen + company + ramen3);
+       //tring bigramen = ramen + company + ramen3;
+        System.out.println(bigramen);
         
         return ramen;
     }
@@ -54,6 +55,9 @@ public class Soup {
 
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
+        letters = letters.replaceFirst("[AEIOUaeiou]","");
+        
+       }
         
     }
 
