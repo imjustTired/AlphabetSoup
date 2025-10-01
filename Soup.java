@@ -1,7 +1,8 @@
 public class Soup {
 //Name: Rodwell Alfred
 //Date: 09/29/25
-//Description: This program will manages a string of letters for a company, allowing you to add letters, insert the company name, remove vowels and many other things.
+//Description: This program will manage
+ a string of letters for a company, allowing you to add letters, insert the company name, remove vowels and many other things.
 
     
     //these are instance variables 
@@ -37,7 +38,8 @@ public class Soup {
 
     // Precondition: 'word' should not be null
     // Postcondition: 'word' is added to the end of letters
-    public void add(String word){
+    public void add(String word){ // Precondition: letters and company already have values
+    // Postcondition: letters now has company name in the middle, updated string is returned
         letters += word;
 }
 
@@ -49,8 +51,7 @@ public class Soup {
 }
 
     
-    // Precondition: letters and company already have values
-    // Postcondition: letters now has company name in the middle, updated string is returned
+   
     public String companyCentered(){
         String ramen = letters.substring(0, letters.length()/2);
         String ramen3 = letters.substring(letters.length()/2, letters.length());
