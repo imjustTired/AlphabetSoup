@@ -1,8 +1,7 @@
 public class Soup {
 //Name: Rodwell Alfred
 //Date: 09/29/25
-//Description: This program will manage
- a string of letters for a company, allowing you to add letters, insert the company name, remove vowels and many other things.
+//Description: This program will manage a string of letters for a company, allowing you to add letters, insert the company name, remove vowels and many other things.
 
     
     //these are instance variables 
@@ -71,7 +70,7 @@ public class Soup {
     // Precondition: num is between 0 and letters.length()
     // Postcondition: 'num' letters are removed from a random position in letters
     public void removeSome(int num){
-        int sp = (int)(Math.random() * (letters.length() - num + 1));
+        int sp = (int)(Math.random() * (letters.length() - num));
         letters = letters.substring(0, sp) + letters.substring(sp + num);
         System.out.println(letters);
 }
